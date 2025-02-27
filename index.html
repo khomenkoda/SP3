@@ -25,6 +25,11 @@
         margin-top: 20px;
       }
     </style>
+    <script>
+  if (location.protocol === "https:") {
+    location.replace("http://" + location.hostname + location.pathname + location.search);
+  }
+</script>
   </head>
   <body>
     <h1>Welcome live chat testing page!</h1>
